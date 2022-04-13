@@ -1,0 +1,331 @@
+/* CSS Variables */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'BioRhyme',
+    serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+/* The header, navbar and footer */
+
+
+:root{
+    --headerColor: #122c34;
+    --lightblueColor: #62929E;
+    --siennaColor: #511C29;
+    --underlineColor: #F76F8E;
+/* Permalink  */
+background: rgb(109, 163, 191);
+/* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(109, 163, 191, 1) 1%, rgba(0, 218, 247, 1) 12%, rgba(99, 177, 216, 1) 26%, rgba(232, 117, 255, 1) 40%, rgba(231, 96, 255, 1) 54%, rgba(176, 89, 193, 1) 64%, rgba(119, 57, 95, 1) 79%, rgba(119, 19, 81, 1) 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(109, 163, 191, 1) 1%, rgba(0, 218, 247, 1) 12%, rgba(99, 177, 216, 1) 26%, rgba(232, 117, 255, 1) 40%, rgba(231, 96, 255, 1) 54%, rgba(176, 89, 193, 1) 64%, rgba(119, 57, 95, 1) 79%, rgba(119, 19, 81, 1) 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(109, 163, 191, 1) 1%, rgba(0, 218, 247, 1) 12%, rgba(99, 177, 216, 1) 26%, rgba(232, 117, 255, 1) 40%, rgba(231, 96, 255, 1) 54%, rgba(176, 89, 193, 1) 64%, rgba(119, 57, 95, 1) 79%, rgba(119, 19, 81, 1) 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6da3bf', endColorstr='#771351', GradientType=1);
+/* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    background-image: url(./img/saturn/saturn-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 2px solid var(--siennaColor);
+}
+
+.banner{
+    color: white;
+    text-shadow: 3px -3px 5px var(--lightblueColor);
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 3.5rem;
+}
+
+.banner a{
+    text-decoration: none;
+}
+
+.headernav{
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    margin: 20px;
+    padding-top: 20px;
+    width: auto;
+    height: 45px;
+    transition: all 1s ease;
+    text-shadow: 1px -1px 5px var(--lightblueColor);
+}
+
+.headernav:hover{
+    transform: scale(120%);
+    text-decoration: underline;
+    text-decoration-color: var(--underlineColor);
+}
+
+.headernav a{
+    text-decoration: none;
+    color: white;
+}
+
+.headernav a:hover{
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    text-align: center;
+    list-style: none;
+}
+
+/* The body - Images */
+
+.titles{
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    width: auto;
+    text-shadow: 2px -2px 5px var(--headerColor);
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    padding-top: 25px;
+    text-decoration: underline;
+    text-decoration-color: var(--underlineColor);
+}
+
+.text{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    width: 65vw;
+    text-shadow: 1px -1px 5px var(--headerColor);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 3rem;
+    margin-top: 15px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.findNFT{
+    margin: 20px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 56vw;
+    height: auto;
+    position: relative;
+    left:22% ;
+    box-shadow: 7px -7px 5px var(--headerColor)
+}
+
+div.NFTLogo a img{
+    width: 150px;
+    padding: 1rem;
+    transition: transform 1s ease;
+}
+
+.NFTLogo a img:hover{
+    transform: scale(120%);
+}
+
+ul.list1 {
+    display: flex;
+    justify-content: left;
+    width: 60vw;
+    font-size: 20px;
+    margin-left: 10%;
+    padding-left: 60px;
+    letter-spacing: 1px;
+    text-shadow: 1px -1px 5px var(--headerColor);
+    font-weight: bold;
+    flex-direction: column;
+    text-align: left;
+    list-style: square;
+}
+
+li{
+    margin: 5px;
+}
+
+/* The gallery */
+
+/* Title and onpage link */
+#thegallery{
+    margin-bottom: 75px;
+}
+
+/* Container */
+.nftDisplay{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+#nft{   
+    border: 3px solid var(--headerColor);
+    box-shadow: 3px -3px 5px var(--headerColor);
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px 150px 100px 100px;
+    transition: all 0.5s ease;
+}
+#nft:hover{
+    transform: rotateY(20deg);
+    box-shadow: 15px -5px 5px var(--headerColor);
+}
+#nftName{
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px -1px 5px var(--headerColor);
+    text-align: center;
+    margin: 20px 150px 15px 100px;
+}
+
+
+/* Footer and content */
+
+.footerTxt {
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    width: 70%;
+    bottom: 2%;
+    left: 15vw;
+    transition: 1s scroll ease ;
+}
+
+.footer {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    bottom: 0%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+18,000000+18,b059c1+100&0+18,0.8+100 */
+background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(176, 89, 193, 0.8) 100%);
+/* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(176, 89, 193, 0.8) 100%);
+/* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 18%, rgba(176, 89, 193, 0.8) 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ccb059c1', GradientType=0);
+/* IE6-9 */
+}
+
+.toppageicon {
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 2%;
+    left: 97%;
+    scale: 200%;
+}
+
+/* Phone screen adjustment */
+
+@media screen and (max-width:770px) {
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+    }
+    .banner {
+        font-size: 2rem;
+    }
+    .headernav {
+        font-size: 1.3rem;
+        margin: 10px;
+        padding-top: 10px;
+    }
+    .nftDisplay {
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #nft {
+        margin: auto;
+        border-radius: 10px;
+        width: 300px;
+        transition: all 0.5s ease;
+    }
+    #nft:hover {
+        transform: rotateY(20deg);
+        box-shadow: 15px -5px 5px var(--headerColor);
+    }
+    #nftName {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        margin: auto;
+        font-size: 1.3rem;
+    }
+    .titles {
+        font-size: 2rem;
+        margin-left: 1.5rem;
+    }
+    .text {
+        width: 65vw;
+        line-height: 35px;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+    ul.list1 {
+        width: 60vw;
+        font-size: 20px;
+        margin: auto;
+        padding: auto;
+        padding-top: 20px;
+    }
+    .findNFT {
+        margin: 20px;
+        border: 2px solid white;
+        height: auto;
+        position: sticky;
+    }
+    .footer {
+        font-size: 0.8rem;
+    }
+    .toppageicon {
+        bottom: 2%;
+        left: 92%;
+    }
+}
