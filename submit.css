@@ -151,25 +151,25 @@ div#container{
 
 @media screen and (max-width:770px){
     .homepage {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
     }
     .banner {
     font-size: 2rem;
     }
     .headernav {
     font-size: 1.3rem;
-    margin: 20px;
-    padding-top: 10px;
+    margin: 10px;
+    padding-top: 15px;
     }
     .footer {
-        font-size: 0.8rem;
+    font-size: 0.8rem;
     }
     .toppageicon {
-        bottom: 2%;
-        left: 92%;
+    bottom: 2%;
+    left: 92%;
     }
 }
