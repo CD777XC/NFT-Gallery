@@ -271,8 +271,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', en
     }
     .headernav {
         font-size: 1.3rem;
-        margin: 20px;
-        padding-top: 10px;
+        margin: 10px;
+        padding-top: 15px;
     }
     .nftDisplay {
         margin-right: auto;
