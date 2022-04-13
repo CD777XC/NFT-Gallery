@@ -162,7 +162,14 @@ div#container{
     }
     .headernav {
     font-size: 1.3rem;
-    margin: 10px;
+    margin: 20px;
     padding-top: 10px;
-}
+    }
+    .footer {
+    font-size: 0.8rem;
+    }
+    .toppageicon {
+    bottom: 2%;
+    left: 92%;
+    }
 }
