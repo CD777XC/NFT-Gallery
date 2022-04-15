@@ -1,4 +1,4 @@
-/* CSS Variables */
+/* CSS Variables - OK all pages === */
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@
     display: none;
 }
 
-/* The header, navbar and footer */
+/* The header, navbar and footer - OK all pages === */
 
 :root {
     --headerColor: #122c34;
@@ -87,58 +87,146 @@ ul {
     list-style: none;
 }
 
-/* Submit form flex */
+/* Submit form flex - OK*/
 
-div#container{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100vw;
+section{
+    width: 100%;
     height: 100vh;
-    justify-content: center;
-    text-align: center;
     background: url(./img/saturn/saturn-wallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+}
+.outside-form{
+    width: 100%;
+    text-shadow: 1px -1px 5px var(--headerColor);
+    font-size: 1.3rem;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.form-group{
+    text-shadow: 1px -1px 5px var(--headerColor);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 30px 200px 20px 200px;
+    width: auto;
+}
+.form-group input{
+    width: 30%;
+}
+.form-group textarea{
+    width: 100%;
+}
+input{
+    background-color: lightgray;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    border: 2px solid #511C29;
+    border-radius: 3px;
+}
+textarea{
+    background-color: lightgray;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    border: 3px solid #511C29;
+    border-radius: 3px;
+    line-height: 25px;
+    overflow: hidden;
+    resize: none;
+}
+
+/* Focus personlized as website colors - OK*/
+
+textarea:focus{
+    border: none;
+    outline: 3px solid var(--siennaColor);
+}
+input:focus{
+    border: none;
+    outline: 3px solid var(--siennaColor);
+}
+
+/* Button and success message - OK*/
+
+button{
+    width: 35%;
+    height: 40px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background: var(--siennaColor);
+    border: 1px solid var(--underlineColor);
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+button:active{
+    scale: 90%;
+}
+#status{
+    position: relative;
+    bottom: 6%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Succes message animations and conditions true or false - OK */
+
+#status.success{
+    width: 400px;
+    border: 2px solid var(--lightblueColor);
+    background-color: var(--headerColor);
+    animation: status 2s ease forwards;
+}
+#status.error{
+    width: 400px;
+    border: 2px solid black;
+    background-color: darkred;
+    animation: status 2s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    80%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 /* Footer and content */
 
-.footerTxt {
-    font-weight: bold;
-    color: black;
-    position: absolute;
-    width: 70%;
-    bottom: 2%;
-    left: 15vw;
-    transition: 1s scroll ease;
-}
-
 .footer {
-    font-size: 1.3rem;
     width: 100%;
     height: 80px;
-    justify-content: center;
-    text-align: center;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     position: fixed;
-    bottom: 0%;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+18,000000+18,b059c1+100&0+18,0.8+100 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(176, 89, 193, 0.8) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(176, 89, 193, 0.8) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 18%, rgba(176, 89, 193, 0.8) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ccb059c1', GradientType=0);
-    /* IE6-9 */
 }
-
 .toppageicon {
     width: auto;
     justify-content: center;
@@ -149,13 +237,16 @@ div#container{
     scale: 200%;
 }
 
+/* Media screen adaptation for smartphone */
+/* Fix .toppageicon not visible once deployed on github - TBD w/ circle-arrow-up.png ?*/
+
 @media screen and (max-width:770px){
     .homepage {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
     }
     .banner {
     font-size: 2rem;
@@ -166,10 +257,10 @@ div#container{
     padding-top: 15px;
     }
     .footer {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
     }
     .toppageicon {
-    bottom: 2%;
-    left: 92%;
+        bottom: 2%;
+        left: 92%;
     }
 }

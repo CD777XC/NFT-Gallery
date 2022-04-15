@@ -34,17 +34,42 @@
             </nav>
         </div>
     </div>
-    <div id="container">
-        <h2>Want to submit pictures, provide ideas or collaborate?</h2>
-        <p>This project is the tomorrow art gallery, it comes with awesome ideas and has even more to be added this is why you can submit your requests and wishes on this text for, attach file(s), provide an e-mail address for contact and we will have the opportunity to discuss.</p>
-    </div>
+    <!-- This is the submit page -->
+    <section>
+        <div class="container">
+            <div class="outside-form">
+            <h2>Want to submit pictures, provide ideas or collaborate?</h2>
+            <br>
+            <p>This project is the tomorrow art gallery, it comes with awesome ideas and has even more to be added this is why you can submit your requests and wishes on this text for, attach file(s), provide an e-mail address for contact and we will have the opportunity to discuss.</p>
+            </div>
+    <!-- Submit form -->
+            <form action="">
+                <div class="form-group">
+                    <label for="username">Enter your username:</label>
+                    <br>
+                    <input type="text" placeholder="Username" required id="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter your e-mail address:</label>
+                    <br>
+                    <input type="email" placeholder="username@email.xyz" required id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Enter your feedback or message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" wrap="soft" placeholder="Type your message"></textarea>
+                </div>
+                <div class="outside-form">
+                    <button type="submit" id="button">send your form</button>
+                </div>
+            </form>
+        </div>
+        <div id="status" class="error">Form sent!</div>
+        <script src="./submit.js"></script>
+    </section>
+</body>
 <footer>
-    <div class="footer">
-        <p class="footerTxt">- Enjoy this NFT museum and stay tuned for the upcoming content -</p>
-    </div>
     <div class="toppageicon">
         <a href="#toppage"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
 </footer>
-</body>
 </html>
