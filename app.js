@@ -13,6 +13,8 @@ let myNft = [
     "./NFT/HP57.png",
 ]
 
+let blackSquare = "./NFT/blackSquare.png"
+
 const nftList = document.querySelector('.nftDisplay')
 
 function render(nft, id){
@@ -21,11 +23,12 @@ function render(nft, id){
             rendering += `
             <li>
                 <p id=nftName>${id[i]}</p>
-                <img src=${nft[i]} id="nft" ondblclick="rotate()">
+                <img src=${nft[i]} id="nft${i}" ondblclick="rotate(nft${i})" onclick="clearRotate(nft${i})">
             </li>
             `
     }
     nftList.innerHTML += rendering
+
 }
 render(myNft, nftNames)
 
@@ -33,9 +36,11 @@ render(myNft, nftNames)
 
 // Start here !
 
-let nft = document.getElementById('nft')
 
-function rotate(){
+function clearRotate(img){
+    img.style.transform = 'rotateY(0deg)'
+}
+function rotate(img){
     let id = null;
     let deg = 20;
     clearInterval(id)
@@ -45,7 +50,8 @@ function rotate(){
             clearInterval(id)
         } else {
             deg=180;
-            nft.style.transform = `rotateY(${deg}deg)`
+            img.style.transform = `rotateY(${deg}deg)`
         }
     }
 }
+
