@@ -32,13 +32,12 @@ function render(nft, id){
 }
 render(myNft, nftNames)
 
-// Flip NFT w/ dblclick eventListener to be done !
-
-// Start here !
-
+// NFT Flip functions - Rotate ondblclick and clear onclick 
+// Create a second image on ondblclick, zoom, center and display text
 
 function clearRotate(img){
-    img.style.transform = 'rotateY(0deg)'
+    img.style.transform = ''
+    img.style.scale = ''
 }
 function rotate(img){
     let id = null;
@@ -51,6 +50,7 @@ function rotate(img){
         } else {
             deg=180;
             img.style.transform = `rotateY(${deg}deg)`
+            img.style.scale = '150%'
         }
     }
 }
