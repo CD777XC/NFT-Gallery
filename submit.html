@@ -12,6 +12,7 @@
     <!-- Symbols FontAwesome-->
     <link rel="stylesheet" href="./Symbols/css/all.css">
     <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./submit.css">
     <title>Submit Page</title>
 </head>
@@ -43,7 +44,7 @@
             <p>This project is the tomorrow art gallery, it comes with awesome ideas and has even more to be added this is why you can submit your requests and wishes on this text for, attach file(s), provide an e-mail address for contact and we will have the opportunity to discuss.</p>
             </div>
     <!-- Submit form -->
-            <form action="">
+            <form>
                 <div class="form-group">
                     <label for="username">Enter your username:</label>
                     <br>
@@ -63,7 +64,8 @@
                 </div>
             </form>
         </div>
-        <div id="status" class="error">Form sent!</div>
+        <!-- Class are 'success' and 'error', message to be given and class to be added trough submit.js -->
+        <div id="status"></div>
         <script src="./submit.js"></script>
     </section>
 </body>
